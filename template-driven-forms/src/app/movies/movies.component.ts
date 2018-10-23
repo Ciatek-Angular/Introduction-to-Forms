@@ -53,25 +53,25 @@ export class MoviesComponent implements OnInit, DoCheck {
   OnFormSubmit(form, photo) {
     console.log(form)
 
-    if(form.controls.title.value == ''){
+    if(!form.controls.title.valid){
       this.isTitle = false
       return
     }else{
       this.isTitle = true
     }
-    if(form.controls.genre.value == ''){
+    if(!form.controls.genre.valid){
       this.isGenre = false
       return
     }else{
       this.isGenre = true
     }
-    if(form.controls.length.value == ''){
+    if(!form.controls.length.valid){
       this.isLength = false
       return
     }else{
       this.isLength = true
     }
-    if(form.controls.photo.value == ''){
+    if(!form.controls.photo.valid){
       this.isPhoto = false
       return
     }else{

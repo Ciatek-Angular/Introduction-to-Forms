@@ -7,25 +7,25 @@
 
     <div class="form-group text-center">
       <div *ngIf="!isTitle" class="alert-danger" style="padding: 10px;">You Have Not Included Title</div>
-      <span> Movie Title </span> <input ngModel name="title" type="text" class="form-control" style="width: 30%; display: inline;"> <br>
+      <span> Movie Title </span> <input required ngModel name="title" type="text" class="form-control" style="width: 30%; display: inline;"> <br>
     </div>
     
     <div class="form-group text-center">
       <div *ngIf="!isGenre" class="alert-danger" style="padding: 10px;">You Have Not Included Genre</div>
-      <span> Movie Genre </span> <input ngModel name="genre" type="text" class="form-control" style="width: 30%; display: inline;"> <br>
+      <span> Movie Genre </span> <input required ngModel name="genre" type="text" class="form-control" style="width: 30%; display: inline;"> <br>
     </div>
     
     <div class="form-group text-center">
       <div *ngIf="!isLength" class="alert-danger" style="padding: 10px;">You Have Not Included Movie Length</div>
-      <span> Movie Length </span> <input ngModel name="length" type="number" class="form-control" style="width: 30%; display: inline;"> <br>
+      <span> Movie Length </span> <input required ngModel name="length" type="number" class="form-control" style="width: 30%; display: inline;"> <br>
     </div>
   
     <div class="form-group text-center">
       <div *ngIf="!isPhoto" class="alert-danger" style="padding: 10px;">You Have Not Included Photo</div>
-      <span> Upload a Photo </span> <input #photo ngModel name="photo" type="file" class="form-control" style="width: 30%; display: inline;"> <br>
+      <span> Upload a Photo </span> <input required #photo ngModel name="photo" type="file" class="form-control" style="width: 30%; display: inline;"> <br>
     </div>
     
-      <button class="btn btn-primary btn-lg mb-1" style="width:20%;">Add Movie</button>
+      <button class="btn btn-primary btn-lg mb-1" style="width:20%;" [disabled]="form.invalid">Add Movie</button>
   </form>
 </div>
 
