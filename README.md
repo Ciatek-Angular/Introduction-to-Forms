@@ -8,3 +8,10 @@ Learning Outcomes:
 - How to read movies
 - How to add new movie
 - How to delete movie
+
+Recipe Exercise
+-----------------------
+### Build a Recipe App where user can
+- Read Recipes
+- Add a new recipe
+- Delete a Recipe
