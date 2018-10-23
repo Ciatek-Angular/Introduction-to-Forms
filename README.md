@@ -9,9 +9,7 @@ Learning Outcomes:
 - How to add new movie
 - How to delete movie
 
-Recipe Exercise
+User form Exercise
 -----------------------
-### Build a Recipe App where user can
-- Read Recipes
-- Add a new recipe
-- Delete a Recipe
+### Build an App where user can
+- Submit a form that is validated as you saw earlier
