@@ -1,0 +1,8 @@
+<div class="card" style=" margin: 20px; height: 600px; width: 650px;">
+  <img class="" [src]="recipe.image" alt="Card image cap" style="height: 20rem">
+  <div class="card-body">
+    <h5 class="card-title">{{ recipe.foodName }}</h5>
+    <p class="card-text"> {{ recipe.description }} </p>
+    <button (click)="deleteRequest(recipe)" class="btn-danger btn-lg" style="position: absolute; right:0; top: 0; cursor:pointer;">X</button>
+  </div>
+</div>

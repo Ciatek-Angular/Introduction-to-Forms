@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 
 import { MovieComponent } from './movie/movie.component';
 import { MoviesComponent } from './movies/movies.component';
+import { RecipesComponent } from './recipes/recipes.component';
+import { RecipeComponent } from './recipe/recipe.component';
 
 
 
@@ -18,11 +20,13 @@ import { MoviesComponent } from './movies/movies.component';
     AppComponent,
     MovieComponent,
     MoviesComponent,
+    RecipesComponent,
+    RecipeComponent,
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,
     HttpClientModule,
+    BrowserAnimationsModule,
     FormsModule,
   ],
   providers: [],
